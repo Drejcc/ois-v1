@@ -1,6 +1,10 @@
 public class Gravitacija{
     public static void main(String[] args) {
         System.out.println("OIS je zakon! Predmet je v redu");
+        Izpis(0.0);
+        Izpis(10.0);
+        Izpis(100.0);
+        Izpis(100000.0);
     }
     
     public static double izracunGravitacije(double visina){
@@ -11,6 +15,6 @@ public class Gravitacija{
     }
 
     public static void Izpis(double visina){
-        System.out.printf("Gravitacijski pospešek na %2.f km nadmorske višine je %2.f m/s^2\n", visina, izracunGravitacije(visina * 1000));
+        System.out.printf("Gravitacijski pospesek na %2.f km nadmorske višine je %2.f m/s^2\n", visina, izracunGravitacije(visina * 1000));
     }
 }
